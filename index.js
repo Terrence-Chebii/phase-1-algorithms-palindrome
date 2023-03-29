@@ -1,7 +1,21 @@
+let val = 'lal'
+isPalindrome(val)
+
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  let normal = word
+  let reverse = (word) => {
+    let reversed = word.split('').reverse().join('')
+    console.log (reversed)
+    return reversed;
+  }
 
+  if(normal === reverse(word)){
+    return true
+  }else{
+    return false
+  }
+}
 /* 
   Add your pseudocode here
 */
